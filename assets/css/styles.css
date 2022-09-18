@@ -5,3 +5,9 @@
 .bg-brown2{
     background-color: rgb(168, 53, 53);
 }
+
+.list-group{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+
