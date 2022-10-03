@@ -1,6 +1,19 @@
 .bg-brown{
     background-color: brown;
+    border-style: solid;
+    border-color:#7e7a7e;
+    border-radius: 3ch;
+    margin: .2%;
+    width: 99%;
+    
 }
+
+.rounded-circle{
+    border-style: solid;
+    border-color:#7e7a7e;
+   border-width: .2cm;
+}
+
 
 .bg-brown2{
     background-color: rgb(168, 53, 53);
@@ -10,4 +23,57 @@
     --bs-list-group-bg: transparent;
     --bs-list-group-border-color: transparent;
 }
+
+.fa-brands.fa-square-facebook.fa-2x:hover{
+ --bs-text-opacity: 1;
+    color:#3737d8 !important;
+}
+
+.fa-brands.fa-square-instagram.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color:#993187 !important;
+}
+
+.fa-brands.fa-linkedin.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color:#4f5c96 !important;
+}
+
+.fa-regular.fa-user.fa-2x.text-white:hover{
+    --bs-text-opacity: 1;
+    color:#c6cf64 !important! 
+}
+
+section.banner{
+background-image:url(/assets/imgs/bannerA.jpg) ;
+border-radius: 3ch;
+border-style: solid;
+border-color:brown;
+margin: .2%;
+height: 65vh;
+width: 99%;
+background-repeat:no-repeat;
+position:relative;
+background-size:cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+-msn-background-size: cover;
+}
+
+h1.intro{
+ font-size: 4rem;
+ color: brown;
+}
+
+h2.intro{
+ font-size: 3.5rem;
+ 
+}
+
+h3.intro{
+    font-size: 3rem;
+    padding-top: 5%;
+}
+
 
