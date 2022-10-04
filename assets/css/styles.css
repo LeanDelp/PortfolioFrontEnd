@@ -11,12 +11,25 @@
 .rounded-circle{
     border-style: solid;
     border-color:#7e7a7e;
-   border-width: .2cm;
+    border-width: .15cm;
+    border-style:dotted;
 }
 
 
 .bg-brown2{
     background-color: rgb(168, 53, 53);
+    border-style: double;
+    border-bottom-right-radius: 3ch;
+    border-top-right-radius: 3ch;
+    font-size: 20px; 
+}
+
+.bg-grey{
+    background-color: rgb(104, 104, 104);
+    border-style: double;
+    border-bottom-right-radius: 3ch;
+    border-top-right-radius: 3ch;
+    font-size: 20px;
 }
 
 .list-group{
