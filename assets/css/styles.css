@@ -90,3 +90,10 @@ h3.intro{
 }
 
 
+.login{
+    height: 60vh;
+}
+
+.formularioLogin{
+    margin-top: 10% ;
+}
