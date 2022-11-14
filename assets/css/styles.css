@@ -9,23 +9,24 @@
 }
 
 .rounded-circle{
-    border-style: solid;
-    border-color:#7e7a7e;
-    border-width: .15cm;
     border-style:dotted;
+    border-color:brown;
+    border-width: .15cm;
+   
 }
 
 
 .bg-brown2{
-    background-color: rgb(168, 53, 53);
     border-style: double;
+    border-color: brown ;
     border-bottom-right-radius: 3ch;
     border-top-right-radius: 3ch;
     font-size: 20px; 
+    background-color: rgb(231, 219, 219);
 }
 
 .bg-grey{
-    background-color: rgb(104, 104, 104);
+    
     border-style: double;
     border-bottom-right-radius: 3ch;
     border-top-right-radius: 3ch;
@@ -54,7 +55,7 @@
 
 .fa-regular.fa-user.fa-2x.text-white:hover{
     --bs-text-opacity: 1;
-    color:#c6cf64 !important! 
+    color:#c6cf64 !important
 }
 
 section.banner{
@@ -73,6 +74,20 @@ background-size:cover;
 -o-background-size: cover;
 -msn-background-size: cover;
 }
+
+
+.boton-edicion{
+    margin-left: 97%;
+    margin-top: 1%;
+    font-size: 140%;
+    
+}
+
+.fa-solid.fa-pen-to-square:hover{
+    --bs-text-opacity: 1;
+    color:rgb(163, 60, 60) !important;
+}
+
 
 h1.intro{
  font-size: 4rem;
@@ -105,4 +120,9 @@ h3.intro{
 .link{
     text-decoration: none;
  color: #000;
+}
+
+.imagenesExper{
+    width: 30%;
+    height: 30%;
 }
