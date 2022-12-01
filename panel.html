@@ -23,12 +23,12 @@
     <nav class="navbar navbar-expand-lg bg-brown">
         <div class="container-fluid">
             <a class="nvbar brand" href="index.html">
-                <img src="./assets/imgs/logo.png" alt="Logo_Arg_Programa" class="w-25">
-                <img src="./assets/imgs/LogosInti.png" alt="Logo_Inti" class="w-25">
+                <img src="./assets/imgs/logo.png" alt="Logo_Arg_Programa" class="w-25"><img src="./assets/imgs/LogosInti.png" alt="Logo_Inti" class="w-25">
             </a>
             <ul class="list-group list-group-horizontal">
                 <!-- Button que envia al loggin(abre loggin) -->
-                <a href="/login.html"><i class="fa-regular fa-user fa-2x text-white list-group-item"></i></a>
+                <a href="/login.html"><i
+                        class="fa-solid fa-right-from-bracket fa-2x text-white list-group-item"></i></a>
                 <!-- Termina boton modal (abre loggin)-->
                 </li>
             </ul>
@@ -38,19 +38,68 @@
         <div class="row mt-5">
             <div class="col-1">
             </div>
-            <div class="col-2 pt-10">
+            <div class="col-2 pt-10 ">
                 <img src="/assets/imgs/perfil.png" alt="fotoPerfil" class="rounded-circle  img-fluid w-75">
                 <h4 class=" text-center intro mt-4">Hola...Soy Leandro</h4>
                 <h4 class=" text-center intro mt-4">Desarrollador FULL STACK JR.</h4>
-                <ul class="list-group mt-4">
-                    <li class="list-group-item admin"><i class="fa-solid fa-people-arrows"></i> Redes</li>
+                <ul class="list-group mt-5">
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#redesModal"
+                            class="link"><i class="fa-solid fa-people-arrows"></i> Redes</a></li>
                     <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#bannerModal"
                             class="link"><i class="fa-solid fa-images"></i> Banner </a></li>
-                    <li class="list-group-item admin"><i class="fa-solid fa-circle-info"></i> Info</li>
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal"
+                            data-bs-target="#informacionModal" class="link"><i class="fa-solid fa-circle-info"></i>
+                            Informacion </a></li>
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#experModal"
+                            class="link"><i class="fa-solid fa-briefcase"></i> Experiencia </a></li>
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#estudiosModal"
+                            class="link"><i class="fa-solid fa-graduation-cap"></i> Estudios</a></li>
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal"
+                            data-bs-target="#habilidadModal" class="link"><i class="fa-solid fa-thumbs-up"></i>
+                            Habilidades</a></li>
+                    <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#proyectModal" class="link"><i class="fa-solid fa-gear"></i>
+                            Proyectos</a></li>
                 </ul>
             </div>
             <div class="col-8">
-                <!-- Inicio Banner Modal -->
+                <!-- Inicio Redes Modal //CREAR LLER ACTUALIZAR ELIMINAR-->
+                <div class="modal fade" id="redesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal de Redes</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3 mt-5">
+                                        <label for="exampleInputRedes" class="form-label">Agregar nueva red</label>
+                                        <input type="url" class="form-control" id="exampleInputRedsocial"
+                                            placeholder="Ingrese la URL" aria-describedby="redesHelp">
+                                        <button type="button" class="btn btn-primary  mt-1"
+                                            data-bs-dismiss="modal">Agregar</button>
+                                    </div>
+                                    <div class="mb-3 mt-5">
+                                        <label for="exampleEliminarRed" class="form-label">Eliminar red social</label>
+                                        <input type="url" class="form-control" id="exampleEliminarRedSocial"
+                                            placeholder="Ingrese la URL">
+                                        <button type="button" class="btn btn-primary  mt-1"
+                                            data-bs-dismiss="modal">Eliminar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Redes Modal -->
+
+                <!-- Inicio Banner Modal //CREAR LLER ACTUALIZAR ELIMINAR -->
                 <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -62,14 +111,19 @@
                             </div>
                             <div class="modal-body">
                                 <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp">
+                                    <div class="mb-3 mt-5">
+                                        <label for="exampleImagenBanner" class="form-label">Actualizar imagen de
+                                            Banner</label>
+                                        <input type="url" class="form-control" id="exampleImagenBanner"
+                                            placeholder="Ingrese la URL" aria-describedby="imagenBannerHelp">
+                                        <button type="button" class="btn btn-primary mt-1">Actualizar</button>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <div class="mb-3 mt-5">
+                                        <label for="exampleInfoBanner" class="form-label">Actualizar info de
+                                            Banner</label>
+                                        <input type="text" class="form-control" id="exampleInfoBanner"
+                                            placeholder="Ingrese la informacion" aria-describedby="infoBannerHelp">
+                                        <button type="button" class="btn btn-primary mt-1">Actualizar</button>
                                     </div>
                                 </form>
                             </div>
@@ -79,22 +133,249 @@
                             </div>
                         </div>
                     </div>
-                </div><!-- Fin Banner Modal -->
+                </div>
+                <!-- Fin Banner Modal -->
+
+                <!-- Inicio Info Modal //CREAR LLER ACTUALIZAR ELIMINAR -->
+                <div class="modal fade" id="informacionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion Modal</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar informacion sobre el
+                                                Perfil</label>
+                                            <input type="text-area" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la información" aria-describedby="infoHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>                                     
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar foto de
+                                                Perfil</label>
+                                            <input type="url" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la URL" aria-describedby="imagenPerfilHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Info Modal -->
+
+                <!-- Inicio Experiencia Modal //CREAR LLER ACTUALIZAR ELIMINAR -->
+                <div class="modal fade" id="experModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Experiencia Modal</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar informacion sobre
+                                                Experiencia
+                                            </label>
+                                            <input type="text-area" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la información" aria-describedby="infoHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>                                   
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar imagen de
+                                                trabajos</label>
+                                            <input type="url" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la URL" aria-describedby="imagenPerfilHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>                                      
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar imagen de
+                                                Experiencia</label>
+                                            <input type="url" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la URL" aria-describedby="imagenPerfilHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Experiencia Modal -->
+
+                <!-- Inicio Estudios Modal //CREAR LLER ACTUALIZAR ELIMINAR -->
+                <div class="modal fade" id="estudiosModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Estudios Modal</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar informacion sobre
+                                                Estudios
+                                            </label>
+                                            <input type="text-area" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la información" aria-describedby="infoHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>                                      
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar imagen de
+                                                estudios</label>
+                                            <input type="url" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la URL" aria-describedby="imagenPerfilHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Estudios Modal -->
+
+                <!-- Inicio Habilidades Modal //CREAR LLER ACTUALIZAR ELIMINAR -->
+                <div class="modal fade" id="habilidadModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Habilidades Modal</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Agregar Habilidades
+                                            </label>
+                                            <input type="text-area" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la información" aria-describedby="infoHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Agregar</button>
+                                        </div>           
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Eliminar Habilidad
+                                            </label>
+                                            <input type="text-area" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la información" aria-describedby="infoHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Eliminar</button>
+                                        </div>
+                                 </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Habilidad Modal -->
+
+                <!-- Inicio Proyectos Modal //CREAR LLER ACTUALIZAR ELIMINAR -->
+                <div class="modal fade" id="proyectModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Proyectos Modal</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Agregar Proyectos
+                                            </label>
+                                            <input type="text-area" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la información" aria-describedby="infoHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Agregar</button>
+                                        </div>
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Eliminar Proyectos
+                                            </label>
+                                            <input type="text-area" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la información" aria-describedby="infoHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Eliminar</button>
+                                        </div>
+                                        <div class="mt-5">
+                                            <label for="exampleInfo" class="form-label">Actualizar imagen de
+                                                proyecto</label>
+                                            <input type="url" class="form-control" id="exampleInfo"
+                                                placeholder="Ingrese la URL" aria-describedby="imagenPerfilHelp">
+                                            <button type="button" class="btn btn-primary mt-1">Actualizar</button>
+                                        </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Proyectos Modal -->
             </div>
             <div class="col-1">
             </div>
         </div>
     </div>
 
-   
+
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
         </script>
 
-    <!-- Footer -->
-    
+    <!--Footer -->
+    <footer class="row bg-brown">
+        <div class="large-12 columns">
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="box text-center">
+
+                        <h5 class="text-white"> <i class="fa-sharp fa-solid fa-copyright"></i></i> LeanDelp</h5>
+                        <hr class="text-white">
+                    </div>
+                </div>
+                <div class="large-6 columns text-center">
+                    <div class="box text-white">2022</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 

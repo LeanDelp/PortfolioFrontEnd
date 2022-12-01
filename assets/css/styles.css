@@ -43,7 +43,7 @@
     color:#3737d8 !important;
 }
 
-.fa-brands.fa-square-instagram.fa-2x:hover{
+.fa-brands.fa-square-github.fa-2x:hover{
     --bs-text-opacity: 1;
     color:#993187 !important;
 }
@@ -106,7 +106,7 @@ h3.intro{
 
 
 .login{
-    height: 60vh;
+    height: 56vh;
 }
 
 .formularioLogin{
@@ -119,10 +119,11 @@ h3.intro{
 
 .link{
     text-decoration: none;
- color: #000;
+ color: #000000;
 }
 
 .imagenesExper{
     width: 30%;
     height: 30%;
+    
 }
